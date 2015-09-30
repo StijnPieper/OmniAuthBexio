@@ -33,7 +33,7 @@ module OmniAuth
       end
 
       def company_profile
-        access_token.get("/api2.php/#{ access_token.params['org'] }/company_profile/1")
+        access_token.get("/api2.php/#{ access_token.params['org'] }/company_profile/1", :headers => { 'Accept' => 'application/json' }).parsed
       end
     end
   end
