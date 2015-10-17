@@ -9,8 +9,7 @@ module OmniAuth
       option :client_options, {
         site: 'https://office.bexio.com',
         authorize_url: '/oauth/authorize',
-        request_token_url: '/oauth/refresh_token',
-        access_token_url: 'oauth/access_token'
+        token_url: '/oauth/access_token'
       }
 
       uid { raw_info['user_id'] }
