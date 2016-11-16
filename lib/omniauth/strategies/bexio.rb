@@ -7,7 +7,8 @@ module OmniAuth
       option :name, :bexio
 
       option :client_options, {
-        site: 'https://office.bexio.com',
+        # site: 'http://my.support-advanon.dev.bexio.com',
+        site: 'http://office.support-advanon.dev.bexio.com',
         authorize_url: '/oauth/authorize',
         token_url: '/oauth/access_token'
       }
